@@ -4,4 +4,98 @@
 
 {% block content %}
 
+<section class="slider">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="img/1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="img/2.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+</section>
+
+
+
+<section class="mt-5">
+   <div class="container">
+       <div class="row">
+          <div class="col">
+            <div class="card is-card shadow" style="width: 18rem;">
+            <div class="card-body">
+                <p class="card-text text-primary">Ponctualité <i class="fi fi-clock" style="margin-left:7.5rem;" ></i></p>  
+            </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card is-card shadow" style="width: 18rem;">
+            <div class="card-body">
+                <p class="card-text text-primary">Sécurité &nbsp;&nbsp;<i class="fi fi-locked" style="margin-left:7.5rem;" ></i></p>  
+            </div>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="card is-card shadow" style="width: 18rem;">
+            <div class="card-body">
+                <p class="card-text text-primary">Bus certifi &nbsp;&nbsp;<i class="fi fi-car" style="margin-left:7.5rem;" ></i></p>  
+            </div>
+            </div>
+          </div>
+
+       </div>
+   </div>
+</section>
+
+
+<section class="contact mt-5"> 
+
+    <h1 class="is-contact">Visitez Nous</h1>
+
+   <div class="container mt-5">
+      <div class="row">
+         <div class="col border p-5">
+            <h3 class="text-primary mb-3"> Notre Adresse : </h3>
+
+            <ul>
+               <li class="text-muted"><i class="fi fi-checkbox-active" class="is-icons"></i>  Tranza en face de la CNSS02 BP 1234 Parakou - BENIN</li>
+            </ul>
+
+             <h3 class="text-primary mb-3">Nos téléphone</h3>
+
+             <ul>
+               <li><i class="fi fi-checkbox-active" class="is-icons"></i>  <a href="tel:00 000 00 00 " class="text-muted">00 000 00 00 </a></li>
+               <li><i class="fi fi-checkbox-active" class="is-icons"></i>  <a href="tel:00 000 00 00 " class="text-muted">00 000 00 00 </a></li>
+            </ul>
+
+            <h3 class="text-primary mb-3">Email</h3>
+
+             <ul>
+               <li><i class="fi fi-checkbox-active" class="is-icons"></i>  <a href="mailto:abc@mail.com" class="text-muted">abc@mail.com</a></li>
+            </ul>
+         </div>
+
+         <div class="col">
+           <div class="mapping">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.7990314161593!2d2.6227150141069178!3d9.351044586438137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10321aaec69e61e1%3A0xfa1b83d2f507352e!2sRte%20de%20Transa%2C%20Parakou!5e0!3m2!1sfr!2sbj!4v1630109187253!5m2!1sfr!2sbj" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+           </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+
+
+
 {% endblock %}

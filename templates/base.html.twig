@@ -3,9 +3,71 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Transport{% endblock %}</title>
-        
+        <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{asset('css/style.css')}}">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css"></i>
     </head>
     <body>
+
+    <header>
+        <nav class="navbar shadow-sm  navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Transport</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Trajets et tarifs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Expedition de collis</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">A propos de nous</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+               
+                <li class="nav-item">
+                    <a class="btn btn-outline-primary" href="#">Connexion</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="btn btn-primary" href="#">Inscription</a>
+                </li>
+                
+            </ul>
+          
+            </div>
+        </div>
+        </nav>
+    </header>
+
         {% block content %}{% endblock %}
+
+
+        <footer class="mt-5">
+            <div class="container-fluid bg-dark p-1">
+                <div class="is-footer d-flex justify-content-center mt-3 align-items-center align-content-center">
+                    <p class="text-center text-white ">&copy 2021 <span>Transport</span></p>
+                </div>
+                
+            </div>
+        </footer>
+
+        <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
     </body>
 </html>
