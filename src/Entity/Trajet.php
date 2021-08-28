@@ -33,9 +33,9 @@ class Trajet
     private $heurDep;
 
     /**
-     * @ORM\Column(type="time")
+     * @ORM\Column(type="integer")
      */
-    private $heurDes;
+    private $prix;
 
 
     public function getId(): ?int
@@ -79,14 +79,15 @@ class Trajet
         return $this;
     }
 
-    public function getHeurDes(): ?\DateTimeInterface
+
+    public function getPrix(): ?int
     {
-        return $this->heurDes;
+        return $this->prix;
     }
 
-    public function setHeurDes(\DateTimeInterface $heurDes): self
+    public function setPrix(int $prix): self
     {
-        $this->heurDes = $heurDes;
+        $this->prix = $prix;
 
         return $this;
     }
