@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Trajets et tarifs {% endblock %}
+
+{% block content %}
+ 
+
+ <section class="tarif">
+
+    <h1 class="is-contact mt-4">Nos trajets et tarifs</h1>
+
+     <div class="container">
+         <div class="row d-flex justify-content-center">
+
+            {% for item in trajet %}
+    
+                <div class="col mt-5 is-trajet">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                        Trajets :   {{ item.depart }} - {{ item.destination }}
+                        </div>
+                        <div class="card-body">
+                        <h5 class="card-title text-muted">Heure de départ :  <span class="bg-secondary p-1  text-white" >{{item.heurDep|date('H:i:s') }}</span></h5>
+                        <br>
+                        <h5 class="card-text">
+                            Prix :  <span class="bg-primary p-1  text-white" >{{item.prix /100 }} FCFA</span>
+                        </h5>
+                        <br>
+                        <a href="#" class="btn btn-primary">Réserver maintenant</a>
+                        </div>
+                    </div>
+                </div>
+             {% endfor %}
+         </div>
+     </div>
+ </section>
+  
+ 
+ <br>
+ <br><br><br>
+
+{% endblock %}
